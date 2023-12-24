@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 resource "aws_ssm_parameter" "params" {
   count = length(var.params)
   name = var.params[count.index].name
