@@ -7,7 +7,7 @@ resource "aws_ssm_parameter" "params" {
 }
 
 variable "params" {
-  default = {
+  default = [
     { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devopspractice.store:8080/", type =  "string" },
     { name = "roboshop.dev.frontend.user_url", value =  "http://user-dev.devopspractice.store:8080/", type =  "string" },
     { name = "roboshop.dev.frontend.cart_url", value =  "http://cart-dev.devopspractice.store:8080/", type =  "string" },
@@ -32,5 +32,5 @@ variable "params" {
 
 
     { name = "roboshop.dev.payment.AMQP_PASS", value =  "roboshop123", type =  "string" },
-  }
+  ]
 }
