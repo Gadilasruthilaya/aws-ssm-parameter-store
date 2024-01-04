@@ -36,6 +36,6 @@ variable "params" {
     { name = "roboshop.dev.user.MONGO_URL", value =  "mongodb://mongodb-dev.devopspractice.store:27017/users", type =  "String" },
 
 
-    { name = "roboshop.dev.payment.AMQP_PASS", value =  "roboshop123", type =  "String" },
+    { name = "roboshop.dev.payment.AMQP_PASS", value =  "roboshop123", type =  "SecureString" },
   ]
 }
