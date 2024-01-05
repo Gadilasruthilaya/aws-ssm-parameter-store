@@ -4,7 +4,3 @@ default:
 	@terraform init
 	@terraform apply -auto-approve
 
-destroy:
-	@rm -rf .terraform
-	@terraform init -backend-config=state.tf
-	@terraform destroy -auto-approve
