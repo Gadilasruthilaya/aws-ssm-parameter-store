@@ -35,7 +35,9 @@ variable "params" {
     { name = "roboshop.dev.user.REDIS_HOST", value =  "redis-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.user.MONGO_URL", value =  "mongodb://mongodb-dev.devopspractice.store:27017/users", type =  "String" },
 
-
+    #passwords
     { name = "roboshop.dev.payment.AMQP_PASS", value =  "roboshop123", type =  "SecureString" },
+    { name = "roboshop.dev.rabbitmq.AMQP_USER", value =  "roboshop", type =  "String" },
+    { name = "roboshop.dev.rabbitmq.AMQP_PASS", value =  "roboshop123", type =  "SecureString" },
   ]
 }
