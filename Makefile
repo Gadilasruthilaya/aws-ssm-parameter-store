@@ -6,5 +6,5 @@ default:
 
 destroy:
 	@rm -rf .terraform
-	@terraform init state.tfvars
+	@terraform init -backend-config=state.tfvars
 	@terraform destroy -auto-approve
