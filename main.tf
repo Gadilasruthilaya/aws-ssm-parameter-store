@@ -7,7 +7,8 @@ resource "aws_ssm_parameter" "params" {
   name = var.params[count.index].name
   type = var.params[count.index].type
   value =var.params[count.index].value
-
+  overwrite = true
+  key_id = "f6210ff7-c501-4ec2-a59c-9a3a2354d155"
 
 }
 
