@@ -23,7 +23,6 @@ variable "params" {
     { name = "roboshop.dev.cart.CATALOGUE_HOST", value =  "catalogue-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.cart.CATALOGUE_PORT", value =  "8080", type =  "String" },
     { name = "roboshop.dev.catalogue.MONGO", value =  "true", type =  "String" },
-    { name = "roboshop.dev.catalogue.MONGO_URL", value =  "mongodb://mongodb-dev.devopspractice.store:27017/catalogue", type =  "String" },
     { name = "roboshop.dev.payment.CART_HOST", value =  "cart-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.payment.CART_PORT", value =  "8080", type =  "String" },
     { name = "roboshop.dev.payment.USER_HOST", value =  "user-dev.devopspractice.store", type =  "String" },
@@ -44,5 +43,7 @@ variable "params" {
     { name = "roboshop.dev.rabbitmq.AMQP_PASS", value =  "roboshop123", type =  "SecureString" },
     { name = "roboshop.dev.mysql.password", value =  "roboshop123", type =  "SecureString" },
     { name = "roboshop.dev.docdb.password", value =  "roboshop123", type =  "SecureString" },
+    { name = "roboshop.dev.catalogue.MONGO_URL", value =  "mongodb://roboshop:roboshop123@docdb-dev-cluster.cluster-c3eyqiw0acbn.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false", type =  "SecureString" },
+    { name = "roboshop.dev.catalogue.docdb_endpoint", value =  "docdb-dev-cluster.cluster-c3eyqiw0acbn.us-east-1.docdb.amazonaws.com", type =  "String" },
   ]
 }
