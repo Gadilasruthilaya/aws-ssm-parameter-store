@@ -19,7 +19,7 @@ variable "params" {
     { name = "roboshop.dev.frontend.cart_url", value =  "https://cart-dev.devopspractice.store/", type =  "String" },
     { name = "roboshop.dev.frontend.shipping_url", value =  "https://shipping-dev.devopspractice.store/", type =  "String" },
     { name = "roboshop.dev.frontend.payment_url", value =  "https://payment-dev.devopspractice.store/", type =  "String" },
-    { name = "roboshop.dev.cart.REDIS_HOST", value =  "elastic cache-configuration", type =  "String" },
+    { name = "roboshop.dev.cart.REDIS_HOST", value =  "elasticache-dev.f4jvg1.clustercfg.use1.cache.amazonaws.com", type =  "String" },
     { name = "roboshop.dev.cart.CATALOGUE_HOST", value =  "catalogue-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.cart.CATALOGUE_PORT", value =  "80", type =  "String" },
     { name = "roboshop.dev.catalogue.MONGO", value =  "true", type =  "String" },
@@ -30,13 +30,13 @@ variable "params" {
     { name = "roboshop.dev.payment.AMQP_HOST", value =  "rabbitmq-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.payment.AMQP_USER", value =  "roboshop", type =  "String" },
     { name = "roboshop.dev.shipping.CART_ENDPOINT", value =  "cart-dev.devopspractice.store:80", type =  "String" },
-    { name = "roboshop.dev.shipping.DB_HOST", value =  "rds link", type =  "String" },
+    { name = "roboshop.dev.shipping.DB_HOST", value =  "mysql-dev.cluster-c3eyqiw0acbn.us-east-1.rds.amazonaws.com", type =  "String" },
     { name = "roboshop.dev.user.MONGO", value =  "true", type =  "String" },
-    { name = "roboshop.dev.user.REDIS_HOST", value =  "elastic cache-configuration", type =  "String" },
+    { name = "roboshop.dev.user.REDIS_HOST", value =  "elasticache-dev.f4jvg1.clustercfg.use1.cache.amazonaws.com", type =  "String" },
    # { name = "roboshop.dev.user.MONGO_URL", value =  "mongodb://mongodb-dev.devopspractice.store:27017/users", type =  "String" },
     { name = "roboshop.dev.rabbitmq.AMQP_USER", value =  "roboshop", type =  "String" },
     { name = "roboshop.dev.mysql.username", value =  "roboshop", type =  "String" },
-    { name = "roboshop.dev.mysql.endpoint", value =  "mysql cluster link", type =  "String" }
+    { name = "roboshop.dev.mysql.endpoint", value =  "mysql-dev.cluster-c3eyqiw0acbn.us-east-1.rds.amazonaws.com", type =  "String" }
     { name = "roboshop.dev.docdb.username", value =  "roboshop", type =  "String" },
 
     #passwords
