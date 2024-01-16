@@ -14,11 +14,11 @@ resource "aws_ssm_parameter" "params" {
 
 variable "params" {
   default = [
-    { name = "roboshop.dev.frontend.catalogue_url", value = "https://catalogue-dev.devopspractice.store/", type =  "String" },
-    { name = "roboshop.dev.frontend.user_url", value =  "https://user-dev.devopspractice.store/", type =  "String" },
-    { name = "roboshop.dev.frontend.cart_url", value =  "https://cart-dev.devopspractice.store/", type =  "String" },
-    { name = "roboshop.dev.frontend.shipping_url", value =  "https://shipping-dev.devopspractice.store/", type =  "String" },
-    { name = "roboshop.dev.frontend.payment_url", value =  "https://payment-dev.devopspractice.store/", type =  "String" },
+    { name = "roboshop.dev.frontend.catalogue_url", value = "http://catalogue-dev.devopspractice.store/", type =  "String" },
+    { name = "roboshop.dev.frontend.user_url", value =  "http://user-dev.devopspractice.store/", type =  "String" },
+    { name = "roboshop.dev.frontend.cart_url", value =  "http://cart-dev.devopspractice.store/", type =  "String" },
+    { name = "roboshop.dev.frontend.shipping_url", value =  "http://shipping-dev.devopspractice.store/", type =  "String" },
+    { name = "roboshop.dev.frontend.payment_url", value =  "http://payment-dev.devopspractice.store/", type =  "String" },
     { name = "roboshop.dev.cart.REDIS_HOST", value =  "elasticache-dev.f4jvg1.clustercfg.use1.cache.amazonaws.com", type =  "String" },
     { name = "roboshop.dev.cart.CATALOGUE_HOST", value =  "catalogue-dev.devopspractice.store", type =  "String" },
     { name = "roboshop.dev.cart.CATALOGUE_PORT", value =  "80", type =  "String" },
